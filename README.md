@@ -5,7 +5,7 @@ This python script analyzes and compares three different approaches to calculati
 
 1. The simplest and possibly worst algorithm
 2. A polished and more efficient version of the previous algorithm
-3. The sieve of Erathostenes algorithm
+3. The sieve of Eratosthenes algorithm
 
 the list of primes up to 10000 is computed and the execution time of each algorithm mesured and printed
 
