@@ -3,7 +3,7 @@
 
 This python script analyzes and compares three different approaches to calculating the list of primes up to a given number:
 
-1. The simplest and worst possible algorithm
+1. The simplest and possibly worst algorithm
 2. A polished and more efficient version of the previous algorithm
 3. The sieve of Erathostenes algorithm
 
