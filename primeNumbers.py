@@ -9,14 +9,14 @@ import timeit
 # Algorithm time complexity: O(n^2)
 
 def list_primes_bad(n):
-	n = int(n)										# in case some float slips in
+    	n = int(n)					# in case some float slips in
 	primes = []
 	for i in range(2,n+1):
 		isPrime = True
 		for j in range(2,i):
 			if i % j == 0:
 				isPrime = False
-				#break									# intentionally not breaking the loop
+				#break			# intentionally not breaking the loop
 		if isPrime:
 			primes.append(i)
 	return primes
@@ -31,7 +31,7 @@ def is_prime(n):
 		return False
 	if (n == 2) | (n == 3):				# simple case
 		return True
-	if n % 2 == 0:								# if n is even
+	if n % 2 == 0:					# if n is even
 		return False
 	for i in range(3, int(n**0.5) + 1, 2):
 		if n % i == 0:
@@ -39,7 +39,7 @@ def is_prime(n):
 	return True
 
 def list_primes_naive(n):
-	n = int(n)										# in case some float slips in
+	n = int(n)					# in case some float slips in
 	primes = []
 	for i in range(2,n+1):
 		if is_prime(i):
@@ -59,7 +59,7 @@ def list_primes_up_to(n):
 		if sieve[i]:
 			primes.append(i)
 			for j in range(i**2,n+1,i): 
-				sieve[j] = False				# flag all multiples of i as non primes
+				sieve[j] = False	# flag all multiples of i as non primes
 	return primes
 
 # ------------------------------------
@@ -70,7 +70,7 @@ def list_primes_from_to(i, j):
 	primes = []
 	i = int(i)
 	j = int(j)
-	if (j - i) < 10000:						# if the interval is small enough use naive approach
+	if (j - i) < 10000:				# if the interval is small enough use naive approach
 		for n in range(i, j+1):
 			if is_prime(n):
 				primes.append(n)
