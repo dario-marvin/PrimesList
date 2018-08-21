@@ -6,7 +6,7 @@ This python script analyzes and compares three different approaches to calculati
 1. The simplest and possibly worst algorithm
 2. A polished and more efficient version of the previous algorithm
 3. The sieve of Eratosthenes algorithm
-4. The sieve of Atkin, which has a theoretical better performance than the other algorithms, actually depends on the    implementation. See (https://web.archive.org/web/20071011180805/http://krenzel.info/static/atkin.py) for an efficient implementation
+4. The sieve of Atkin, which has a theoretical better performance than the other algorithms, but actually depends on the implementation used. See (https://web.archive.org/web/20071011180805/http://krenzel.info/static/atkin.py) for an efficient code
 
 the list of primes up to 10000 is computed and the execution time of each algorithm mesured and printed
 
