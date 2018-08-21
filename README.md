@@ -17,7 +17,7 @@ the list of primes up to 10000 is computed and the execution time of each algori
 Some profiling of the execution time is then computed and plotted with the help of `matplotlib`
 
 <p align="center">
-  <img src="https://github.com/dario-marvin/PrimesList/blob/master/primes_1.png">
+  <img src="https://github.com/dario-marvin/PrimesList/blob/master/primes1.png">
 </p>
 
 <p align="center">
