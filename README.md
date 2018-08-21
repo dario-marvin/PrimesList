@@ -13,3 +13,8 @@ the list of primes up to 10000 is computed and the execution time of each algori
 <p align="center">
   <img width="583" height="275" src="https://github.com/dario-marvin/PrimesList/blob/master/primes_list.png">
 </p>
+
+<p align="center">
+  <img width="583" height="275" src="https://github.com/dario-marvin/PrimesList/blob/master/primes_1.eps">
+</p>
+
