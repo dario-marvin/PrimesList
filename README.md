@@ -21,5 +21,5 @@ Some profiling of the execution time is then computed and plotted with the help 
 </p>
 
 <p align="center">
-  <img src="https://github.com/dario-marvin/PrimesList/blob/master/primes_2.png">
+  <img src="https://github.com/dario-marvin/PrimesList/blob/master/primes2.png">
 </p>
