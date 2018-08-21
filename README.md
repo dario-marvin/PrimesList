@@ -14,7 +14,7 @@ the list of primes up to 10000 is computed 5 times for each algorithm and the ex
   <img src="https://github.com/dario-marvin/PrimesList/blob/master/prime0.png">
 </p>
 
-Some profiling of the execution time is then computed and plotted with the help of `matplotlib`
+Some profiling of the execution time are then computed and plotted with the help of `matplotlib`
 
 <p align="center">
   <img src="https://github.com/dario-marvin/PrimesList/blob/master/prime1.png">
