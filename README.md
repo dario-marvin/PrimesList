@@ -11,7 +11,7 @@ This python script analyzes and compares three different approaches to calculati
 the list of primes up to 10000 is computed and the execution time of each algorithm mesured and printed
 
 <p align="center">
-  <img width="583" height="275" src="https://github.com/dario-marvin/PrimesList/blob/master/primes_list.png">
+  <img src="https://github.com/dario-marvin/PrimesList/blob/master/primes_list.png">
 </p>
 
 Some profiling of the execution time is then computed and plotted with the help of `matplotlib`
