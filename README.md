@@ -20,3 +20,6 @@ Some profiling of the execution time is then computed and plotted with the help 
   <img src="https://github.com/dario-marvin/PrimesList/blob/master/primes_1.png">
 </p>
 
+<p align="center">
+  <img src="https://github.com/dario-marvin/PrimesList/blob/master/primes_2.png">
+</p>
