@@ -7,6 +7,7 @@ approaches to primes list computation
 """
 
 import timeit
+import matplotlib.pyplot as plt
 
 
 # Approach 1: bad algorithm
@@ -34,9 +35,9 @@ def primes_bad(n):
 def is_prime(n):
     if n <= 1:
         return False
-    if (n == 2) | (n == 3):  # simple case
+    if (n == 2) | (n == 3):
         return True
-    if n % 2 == 0:  # if n is even
+    if n % 2 == 0:
         return False
     for i in range(3, int(n ** 0.5) + 1, 2):
         if n % i == 0:
@@ -132,7 +133,7 @@ for i in range(5, 100):
 # Approach 1: Bad approach
 print ('Bad approach takes ', round(timeit.timeit('primes_bad(10000)',
        globals=globals(), number=1), 4), ' seconds.')
-       
+
 # Approach 2: Naive approach
 print ('Naive approach takes ',
        round(timeit.timeit('primes_naive(10000)', globals=globals(),
@@ -143,9 +144,65 @@ print ('Eratosthenes sieve algorithm takes ',
        round(timeit.timeit('primes_sieve_eratosthenes(10000)',
        globals=globals(), number=1), 4), ' seconds.')
 
-# Approach 3: Atkin sieve algorithm
+# Approach 4: Atkin sieve algorithm
 print ('Atkin sieve algorithm takes ',
        round(timeit.timeit('primes_sieve_atkin(10000)',
        globals=globals(), number=1), 4), ' seconds.')
 
-			
+# ------------------------------------
+
+time_bad = []
+time_naive = []
+time_hera = []
+time_atkin = []
+range_ = range(1000, 11000, 1000)
+
+for c in range_:
+    str_ = 'primes_bad(' + str(c) + ')'
+    time_bad.append(timeit.timeit(str_, globals=globals(), number=1))
+
+    str_ = 'primes_naive(' + str(c) + ')'
+    time_naive.append(timeit.timeit(str_, globals=globals(), number=1))
+
+    str_ = 'primes_sieve_eratosthenes(' + str(c) + ')'
+    time_hera.append(timeit.timeit(str_, globals=globals(), number=1))
+
+    str_ = 'primes_sieve_atkin(' + str(c) + ')'
+    time_atkin.append(timeit.timeit(str_, globals=globals(), number=1))
+
+plt.figure(0)
+plt.plot(range_, time_bad, 'b-s', label='Bad')
+plt.plot(range_, time_naive, 'g-^', label='Naive')
+plt.plot(range_, time_hera, 'r-o', label='Heratosthenes')
+plt.plot(range_, time_atkin, 'k-*', label='Atkin')
+plt.ylabel('Execution time')
+plt.xlabel('n')
+plt.legend(loc='upper left')
+plt.show()
+
+# ------------------------------------
+
+time_naive = []
+time_hera = []
+time_atkin = []
+range_ = range(5000, 105000, 5000)
+
+for c in range_:
+
+    str_ = 'primes_naive(' + str(c) + ')'
+    time_naive.append(timeit.timeit(str_, globals=globals(), number=1))
+
+    str_ = 'primes_sieve_eratosthenes(' + str(c) + ')'
+    time_hera.append(timeit.timeit(str_, globals=globals(), number=1))
+
+    str_ = 'primes_sieve_atkin(' + str(c) + ')'
+    time_atkin.append(timeit.timeit(str_, globals=globals(), number=1))
+
+plt.figure(1)
+plt.plot(range_, time_naive, 'g-^', label='Naive')
+plt.plot(range_, time_hera, 'r-o', label='Heratosthenes')
+plt.plot(range_, time_atkin, 'k-*', label='Atkin')
+plt.ylabel('Execution time')
+plt.xlabel('n')
+plt.legend(loc='upper left')
+plt.show()
