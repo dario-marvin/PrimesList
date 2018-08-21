@@ -103,10 +103,9 @@ def primes_sieve_atkin(n):
 
     return [2, 3, 5] + [i for (i, p) in enumerate(sieve) if p]
 
-from math import sqrt, ceil, floor, log
-
-
 # Efficient code downloaded from https://web.archive.org/web/20071011180805/http://krenzel.info/static/atkin.py
+
+from math import sqrt, ceil, floor, log
 
 def sieveOfAtkin(end):
     end += 1
