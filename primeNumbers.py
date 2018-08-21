@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """ 
-Simple Python module for the time analysis of different possible 
-approaches to primes list computation
+Simple Python script for the time analysis of different possible 
+algorithms to primes list computation
 """
 
 import timeit
