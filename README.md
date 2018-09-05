@@ -25,7 +25,7 @@ Some profiling of the execution time are then computed and plotted with the help
 </p>
 
 ### How to compile and execute the code
-Save the source code file [`prime_numbers.py`](https://github.com/dario-marvin/PrimesList/blob/master/prime_numbers.py) in a folder on your computer. Open a terminal and navigate to you folder with the command `cd`, then run the commands
+Save the source code file [`prime_numbers.py`](https://github.com/dario-marvin/PrimesList/blob/master/prime_numbers.py) in a folder on your computer. Open a terminal and navigate to you folder with the command `cd`, then run the command
 ```
 python3 prime_numbers.py
 ```
